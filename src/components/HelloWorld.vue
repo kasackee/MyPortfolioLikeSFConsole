@@ -39,49 +39,65 @@
 
     <h2>Test</h2>
     <ul>
-        <li v-for="exp in exp_list">
-            {{ exp }}
-        </li>
+      <li v-for="exp in exp_list" :key="exp.id">
+        {{ exp.text }}
+      </li>
     </ul>
 
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      exp_list: [
-          'Laravel 5.x',
-          'Codeigniter 2.x',
-          'cordova',
-          'react.js',
-          'monaca',
-          'angular.js',
-          '趣味：Ruby (DXRuby使用 シューティング）',
-          '趣味：Unity（3Dブロック崩し、2Dシューティング）',
-      ],
+  export default {
+    name: 'HelloWorld',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App',
+        exp_list: [
+          {
+            id: 1,
+            text: 'Laravel 5.x',
+          }, {
+            id: 2,
+            text: 'Codeigniter 2.x',
+          }, {
+            id: 3,
+            text: 'cordova',
+          }, {
+            id: 4,
+            text: 'react.js',
+          }, {
+            id: 5,
+            text: 'monaca',
+          }, {
+            id: 6,
+            text: 'angular.js',
+          }, {
+            id: 7,
+            text: '趣味：Ruby (DXRuby使用 シューティング）',
+          }, {
+            id: 8,
+            text: '趣味：Unity（3Dブロック崩し、2Dシューティング）',
+          },
+        ],
+      }
     }
   }
-}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  h1, h2 {
+    font-weight: normal;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
 </style>
