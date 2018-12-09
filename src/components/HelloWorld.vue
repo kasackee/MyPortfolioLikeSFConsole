@@ -39,9 +39,9 @@
 
     <h2>Test</h2>
     <ul>
-      <li>
-        <input type="text" v-model="msg">
-      </li>
+        <li v-for="exp in exp_list">
+            {{ exp }}
+        </li>
     </ul>
 
   </div>
@@ -52,7 +52,17 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      exp_list: [
+          'Laravel 5.x',
+          'Codeigniter 2.x',
+          'cordova',
+          'react.js',
+          'monaca',
+          'angular.js',
+          '趣味：Ruby (DXRuby使用 シューティング）',
+          '趣味：Unity（3Dブロック崩し、2Dシューティング）',
+      ],
     }
   }
 }
