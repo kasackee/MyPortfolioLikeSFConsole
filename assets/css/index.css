@@ -1,4 +1,23 @@
 
+/*-------------------------------------------------------
+ * アニメーションキーフレーム
+ *-------------------------------------------------------*/
+
+@keyframes svgLight {
+  0% {
+    -webkit-filter: drop-shadow( 0 0 10px #EFF3FF );
+    filter: drop-shadow( 0 0 10px #EFF3FF );
+  }
+  100% {
+    -webkit-filter: drop-shadow( 0 0 4px #EFF3FF );
+    filter: drop-shadow( 0 0 4px #EFF3FF );
+  }
+}
+
+/*-------------------------------------------------------
+ * 全体
+ *-------------------------------------------------------*/
+
 .contents_body {
     color: #EFF3FF;
     padding: 10px 40px;
@@ -19,31 +38,14 @@
     padding: 30px 0 40px;
 }
 
-@keyframes textLight {
-    0% {
-        text-shadow: 0 0 6px #A9D2F8;
-    }
-    100% {
-        text-shadow: 0 0 18px #A9D2F8;
-    }
-}
-@keyframes svgLight {
-    0% {
-        -webkit-filter: drop-shadow( 0 0 10px #EFF3FF );
-        filter: drop-shadow( 0 0 10px #EFF3FF );
-    }
-    100% {
-        -webkit-filter: drop-shadow( 0 0 4px #EFF3FF );
-        filter: drop-shadow( 0 0 4px #EFF3FF );
-    }
-}
-
-
-
 .main_page > .main_column {
     width: 600px;
     margin: auto;
 }
+
+/*-------------------------------------------------------
+ * メインコンテンツ　表示領域
+ *-------------------------------------------------------*/
 
 
 .contents_box {
@@ -54,7 +56,7 @@
 .contents_box > .title {
     font-size: 20px;
     text-shadow: 0 0 2px #A9D2F8;
-    background-color: #115ca2;
+    background-color: rgba(17, 92, 162, .4); /* #115ca2 */
     padding: 10px;
     box-shadow: 0 0 1px #A9D2F8 inset;
     border-bottom: 1px solid #A9D2F8;
@@ -73,6 +75,10 @@
     display: block;
     padding: 4px;
 }
+
+/*-------------------------------------------------------
+ * メインコンテンツ　アイコンボタン
+ *-------------------------------------------------------*/
 
 .icon_list {
     display: flex;
