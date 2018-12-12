@@ -1,0 +1,124 @@
+
+.contents_body {
+    color: #EFF3FF;
+    padding: 10px 40px;
+    text-shadow: 0 0 3px #A9D2F8;
+    background-color: #081231;
+    font-family: 'Fjalla One', 'Sawarabi Gothic', sans-serif;
+}
+.main_page {
+    display: flex;
+    flex-direction: row;
+}
+
+.header > h1 {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0 40px;
+}
+
+@keyframes textLight {
+    0% {
+        text-shadow: 0 0 6px #A9D2F8;
+    }
+    100% {
+        text-shadow: 0 0 18px #A9D2F8;
+    }
+}
+@keyframes svgLight {
+    0% {
+        -webkit-filter: drop-shadow( 0 0 10px #EFF3FF );
+        filter: drop-shadow( 0 0 10px #EFF3FF );
+    }
+    100% {
+        -webkit-filter: drop-shadow( 0 0 4px #EFF3FF );
+        filter: drop-shadow( 0 0 4px #EFF3FF );
+    }
+}
+
+
+
+.main_page > .main_column {
+    width: 600px;
+    margin: auto;
+}
+
+
+.contents_box {
+    border: 1px solid #A9D2F8;
+    box-shadow: 0 0 1px #A9D2F8;
+    margin-bottom: 20px;
+}
+.contents_box > .title {
+    font-size: 20px;
+    text-shadow: 0 0 2px #A9D2F8;
+    background-color: #115ca2;
+    padding: 10px;
+    box-shadow: 0 0 1px #A9D2F8 inset;
+    border-bottom: 1px solid #A9D2F8;
+}
+.contents_box > .contents {
+    padding: 10px;
+    box-shadow: 0 0 1px #A9D2F8 inset;
+}
+.contents_box > .contents > h3 {
+    display: block;
+    font-size: 24px;
+    padding: 6px 6px 14px;
+    text-align: center;
+}
+.contents_box > .contents > .skillList > ul > li {
+    display: block;
+    padding: 4px;
+}
+
+.icon_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.icon_list > .icon_box {
+    border: 1px solid #A9D2F8;
+    box-sizing: border-box;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    box-shadow: 0 0 1px #A9D2F8;
+    cursor: pointer;
+    transition-duration: 0.05s;
+}
+.icon_list > .icon_box:hover {
+    border: 1px solid #EFF3FF;
+}
+.icon_list > .icon_box > .icon_label {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+    color: #A9D2F8;
+    transition-duration: 0.05s;
+}
+.icon_list > .icon_box:hover > .icon_label {
+    color: #EFF3FF;
+}
+.icon_list > .icon_box > svg {
+    display: block;
+    fill: #A9D2F8;
+    max-width: 80px;
+    height: 80px;
+    margin: auto;
+    padding-top: 8px;
+    -webkit-filter: drop-shadow( 0 0 1px #A9D2F8 );
+    filter: drop-shadow( 0 0 1px #A9D2F8 );
+    transition-duration: 0.05s;
+}
+.icon_list > .icon_box:hover > svg {
+    fill: #EFF3FF;
+    -webkit-filter: drop-shadow( 0 0 4px #EFF3FF );
+    filter: drop-shadow( 0 0 4px #EFF3FF );
+    animation: svgLight 1.65s ease 0s infinite alternate none running;
+}
