@@ -5,6 +5,7 @@
     text-shadow: 0 0 3px #A9D2F8;
     background-color: #081231;
     font-family: 'Fjalla One', 'Sawarabi Gothic', sans-serif;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260px%22%20height%3D%2260px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2060%2060%22%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2260%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2260%22%20y2%3D%220%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%3C%2Fsvg%3E')
 }
 .main_page {
     display: flex;
