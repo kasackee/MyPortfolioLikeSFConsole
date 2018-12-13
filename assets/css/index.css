@@ -21,9 +21,10 @@
 .contents_body {
     color: #EFF3FF;
     padding: 10px 40px;
-    text-shadow: 0 0 3px #7292B8;
+    text-shadow: 0 0 1px #7292B8;
+    letter-spacing: 1px;
     font-family: 'Fjalla One', 'Sawarabi Gothic', sans-serif;
-    background: radial-gradient(rgba(28, 38, 59, .9), rgba(18, 28, 49, 1)), url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260px%22%20height%3D%2260px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2060%2060%22%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2260%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2260%22%20y2%3D%220%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%3C%2Fsvg%3E');
+    background: radial-gradient(rgba(8, 18, 39, .9), rgba(8, 18, 39, 1)), url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260px%22%20height%3D%2260px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2060%2060%22%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2260%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2260%22%20y2%3D%220%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%3C%2Fsvg%3E');
 }
 .main_page {
     display: flex;
@@ -36,6 +37,7 @@
     font-weight: bold;
     text-align: center;
     padding: 30px 0 40px;
+    text-shadow: 4px 4px rgba(0, 0, 0, .75);
 }
 
 .main_page > .main_column {
@@ -51,11 +53,13 @@
 .contents_box {
     border: 1px solid #7292B8;
     margin-bottom: 36px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 12px 12px rgba(0, 0, 0, .75);
 }
 .contents_box > .title {
     font-size: 20px;
     text-shadow: 0 0 2px #7292B8;
-    background-color: rgba(17, 92, 162, .4); /* #115ca2 */
+    background: linear-gradient(-90deg, rgba(17, 92, 162, .4), rgba(17, 92, 162, .1));
     padding: 10px;
     box-shadow: 0 0 1px #7292B8 inset;
     border-bottom: 1px solid #7292B8;
@@ -66,7 +70,8 @@
 .contents_box > .contents > h3 {
     display: block;
     font-size: 24px;
-    padding: 6px 6px 14px;
+    padding: 6px 6px 4px;
+    margin-bottom: 10px;
     text-align: center;
 }
 .contents_box > .contents > .skillList > ul > li {
@@ -116,8 +121,6 @@
     height: 80px;
     margin: auto;
     padding-top: 8px;
-    -webkit-filter: drop-shadow( 0 0 1px #7292B8 );
-    filter: drop-shadow( 0 0 1px #7292B8 );
     transition-duration: 0.05s;
 }
 .icon_list > .icon_box:hover > svg {
