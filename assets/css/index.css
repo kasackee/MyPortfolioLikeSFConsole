@@ -18,6 +18,7 @@
  * 全体
  *-------------------------------------------------------*/
 
+
 .contents_body {
     color: #EFF3FF;
     text-shadow: 0 0 1px #7292B8;
@@ -32,13 +33,11 @@
 .header {
     position: relative;
     height: 340px;
-    /*background: rgba(0, 6, 20, .5);*/
     border-top: 1px solid #7292B8;
     border-bottom: 1px solid #7292B8;
     margin-top: 20px;
     margin-bottom: 20px;
     background: linear-gradient( 135deg, rgba(0, 46, 82, 0), rgba(0, 46, 82, 7)), url('../../assets/images/earth.png') top right no-repeat;
-
 }
 .header > h1 {
     position: absolute;
@@ -54,6 +53,23 @@
     width: 800px;
     margin: auto;
 }
+
+@media screen and (max-width: 767px) {
+    html, body {
+        height: 100%;
+    }
+    .header {
+        height: 50%;
+    }
+    .header > h1 {
+        background-size: contain;
+    }
+    .main_page > .main_column {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 
 /*-------------------------------------------------------
  * メインコンテンツ　表示領域
@@ -88,6 +104,19 @@
     display: block;
     padding: 4px;
 }
+
+
+@media screen and (max-width: 767px) {
+    .contents_box {
+        box-shadow: none;
+        margin: 0 10px 24px;
+    }
+    .contents_box > .title {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
 
 /*-------------------------------------------------------
  * メインコンテンツ　アイコンボタン
@@ -139,3 +168,58 @@
     filter: drop-shadow( 0 0 4px #EFF3FF );
     animation: svgLight 1.65s ease 0s infinite alternate none running;
 }
+
+
+@media screen and (max-width: 767px) {
+    .icon_list {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .icon_list > .icon_box {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 12px;
+    }
+    .icon_list > .icon_box > .icon_label {
+        width: 50%;
+        top: 10%;
+        left: 10px;
+        text-align: left;
+    }
+    .icon_list > .icon_box > svg {
+        margin: 0 10px 0 auto;
+        max-width: 60px;
+        height: 60px;
+    }
+    .icon_list > .icon_box:nth-child(1) {
+        border: 1px solid #B29278;
+    }
+    .icon_list > .icon_box:nth-child(1) > .icon_label {
+        color: #B29278;
+    }
+    .icon_list > .icon_box:nth-child(1) > svg {
+        fill: #B29278;
+    }
+    .icon_list > .icon_box:nth-child(2) {
+        border: 1px solid #92B278;
+    }
+    .icon_list > .icon_box:nth-child(2) > .icon_label {
+        color: #92B278;
+    }
+    .icon_list > .icon_box:nth-child(2) > svg {
+        fill: #92B278;
+    }
+    .icon_list > .icon_box:nth-child(3) {
+        border: 1px solid #B292B8;
+    }
+    .icon_list > .icon_box:nth-child(3) > .icon_label {
+        color: #B292B8;
+    }
+    .icon_list > .icon_box:nth-child(3) > svg {
+        fill: #B292B8;
+    }
+}
+
+
+
+
