@@ -4,14 +4,14 @@
  *-------------------------------------------------------*/
 
 @keyframes svgLight {
-  0% {
-    -webkit-filter: drop-shadow( 0 0 10px #EFF3FF );
-    filter: drop-shadow( 0 0 10px #EFF3FF );
-  }
-  100% {
-    -webkit-filter: drop-shadow( 0 0 4px #EFF3FF );
-    filter: drop-shadow( 0 0 4px #EFF3FF );
-  }
+    0% {
+        -webkit-filter: drop-shadow( 0 0 10px #EFF3FF );
+        filter: drop-shadow( 0 0 10px #EFF3FF );
+    }
+    100% {
+        -webkit-filter: drop-shadow( 0 0 4px #EFF3FF );
+        filter: drop-shadow( 0 0 4px #EFF3FF );
+    }
 }
 
 /*-------------------------------------------------------
@@ -62,6 +62,7 @@
         height: 50%;
     }
     .header > h1 {
+        font-size: 46px;
         background-size: contain;
     }
     .main_page > .main_column {
