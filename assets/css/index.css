@@ -20,28 +20,38 @@
 
 .contents_body {
     color: #EFF3FF;
-    padding: 10px 40px;
     text-shadow: 0 0 1px #7292B8;
-    letter-spacing: 1px;
-    font-family: 'Fjalla One', 'Sawarabi Gothic', sans-serif;
-    background: radial-gradient(rgba(8, 18, 39, .9), rgba(8, 18, 39, 1)), url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260px%22%20height%3D%2260px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2060%2060%22%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2260%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2260%22%20y2%3D%220%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%3C%2Fsvg%3E');
+    font-family: 'Audiowide', 'Sawarabi Gothic', sans-serif;
+    background: radial-gradient(rgba(14, 26, 48, .9), rgba(14, 26, 48, 1)), url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260px%22%20height%3D%2260px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2060%2060%22%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%2260%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%20%3Cline%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%2260%22%20y2%3D%220%22%20stroke%3D%22%23283261%22%20stroke-width%3D%221%22%20%2F%3E%3C%2Fsvg%3E');
 }
 .main_page {
     display: flex;
     flex-direction: row;
 }
 
+.header {
+    position: relative;
+    height: 340px;
+    /*background: rgba(0, 6, 20, .5);*/
+    border-top: 1px solid #7292B8;
+    border-bottom: 1px solid #7292B8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient( 135deg, rgba(0, 46, 82, 0), rgba(0, 46, 82, 7)), url('../../assets/images/earth.png') top right no-repeat;
+
+}
 .header > h1 {
+    position: absolute;
+    top: 42%;
+    width: 100%;
     display: block;
-    font-size: 50px;
+    font-size: 58px;
     font-weight: bold;
     text-align: center;
-    padding: 30px 0 40px;
-    text-shadow: 4px 4px rgba(0, 0, 0, .75);
 }
 
 .main_page > .main_column {
-    width: 600px;
+    width: 800px;
     margin: auto;
 }
 
@@ -93,7 +103,7 @@
     border: 1px solid #7292B8;
     box-sizing: border-box;
     position: relative;
-    width: 120px;
+    width: 30%;
     height: 120px;
     border-radius: 4px;
     box-shadow: 0 0 1px #7292B8;
