@@ -14,6 +14,16 @@
     }
 }
 
+
+/*-------------------------------------------------------
+ * フォント読み込み
+ *-------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Audiowide';
+    src: url(../../assets/fonts/Audiowide-Regular.ttf);
+}
+
 /*-------------------------------------------------------
  * 全体
  *-------------------------------------------------------*/
@@ -71,6 +81,36 @@
     }
 }
 
+
+/*-------------------------------------------------------
+ * メインコンテンツ　お知らせ一覧
+ *-------------------------------------------------------*/
+
+.news_list > li {
+    display: flex;
+    padding: 8px 0 6px 10px;
+}
+.news_list > li > time,
+.news_list > li > p {
+    min-width: 120px;
+}
+
+@media screen and (max-width: 767px) {
+    .news_list > li {
+        display: block;
+        padding: 3px 0 3px 4px;
+    }
+    .news_list > li:not(:first-child) {
+        display: none;
+    }
+    .news_list > li > time {
+        display: block;
+        padding-bottom: 4px;
+    }
+    .news_list > li > p {
+        padding-left: 14px;
+    }
+}
 
 /*-------------------------------------------------------
  * メインコンテンツ　表示領域
